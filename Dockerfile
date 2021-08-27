@@ -3,4 +3,4 @@ COPY D:\PROJECTS\banknote
 EXPOSE 5000
 WORKDIR D:\PROJECTS\banknote
 RUN pip install -r requirements.txt
-CMD python flask_api.py
+CMD python app.py

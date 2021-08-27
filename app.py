@@ -64,7 +64,7 @@ def main():
   st.text("For Example Click on the Learn More Button Below")
   if st.button("Predict"):
     result = predict_note_authentication(variance, skewness, curtosis, entropy)
-  st.success('The Output is {}'.format(result))
+  st.success(result)
   if st.button("Learn More"):
     st.text("[1] means the bank note is authentic, [0] means the bank note is not authentic")
     st.text("Examples for output 0:")

@@ -53,7 +53,7 @@ def main():
   <div style="background-color:tomato;padding:10px">
   </div>
   """
-  st.text("Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features (variance, skewness, curtosis, entropy) from images. Purpose of this is to predict authencity of a bank note using the features generated from the Wavelet Transform tool **not** the physical bank note itself.")
+  st.caption("Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features (variance, skewness, curtosis, entropy) from images. Purpose of this is to predict authencity of a bank note using the features generated from the Wavelet Transform tool **not** the physical bank note itself.")
   st.markdown(html_temp, unsafe_allow_html=True)
   variance = st.text_input("variance")
   skewness = st.text_input("skewness")

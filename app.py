@@ -5,7 +5,6 @@ import pickle
 #import flasgger
 #from flasgger import Swagger
 import streamlit as st
-
 #app = Flask(__name__)
 #Swagger(app)
 
@@ -50,10 +49,14 @@ def main():
   st.title("Bank Note Authenticator")
   html_temp = """
   <div style="background-color:tomato;padding:10px">
-  <h2 style="color:white;text-align:center;">Streamlit Bank Note Authenticator ML App </h2>
+  <h2 style="color:white;text-align:center;">Machine Learning Prediction for Bank Note Authenticity </h2>
+  <div style="background-color:tomato;padding:10px">
+  <h2 style="color:white;text-align:center;"> Data were extracted from images that were taken from genuine and forged banknote-like specimens. For digitization, an industrial camera usually used for print inspection was used. The final images have 400x 400 pixels. Due to the object lens and distance to the investigated object gray-scale pictures with a resolution of about 660 dpi were gained. Wavelet Transform tool were used to extract features (variance, skewness, curtosis, entropy) from images. Purpose of this is to predict authencity of a bank note using the features generated from the Wavelet Transform tool not the physical bank note itself. </h2>
   </div>
   """
   st.markdown(html_temp, unsafe_allow_html=True)
+  st.text("Instructions:")
+  st.text("Input Numerical Values only")
   variance = st.text_input("variance")
   skewness = st.text_input("skewness")
   curtosis = st.text_input("curtosis")
